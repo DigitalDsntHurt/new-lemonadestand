@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @volunteer.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @volunteer.lname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @volunteer.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @volunteer.phone %>
+</p>
+
+<p>
+  <strong>Current title:</strong>
+  <%= @volunteer.current_title %>
+</p>
+
+<p>
+  <strong>Current project:</strong>
+  <%= @volunteer.current_project %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @volunteer.bio %>
+</p>
+
+<p>
+  <strong>Topics of expertise:</strong>
+  <%= @volunteer.topics_of_expertise %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @volunteer.location %>
+</p>
+
+<p>
+  <strong>Travel distance:</strong>
+  <%= @volunteer.travel_distance %>
+</p>
+
+<p>
+  <strong>Agreed to tos:</strong>
+  <%= @volunteer.agreed_to_tos %>
+</p>
+
+<%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
+<%= link_to 'Back', volunteers_path %>

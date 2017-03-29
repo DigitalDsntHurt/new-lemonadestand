@@ -1,0 +1,105 @@
+<%= form_for(volunteer) do |f| %>
+  <% if volunteer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(volunteer.errors.count, "error") %> prohibited this volunteer from being saved:</h2>
+
+      <ul>
+      <% volunteer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<table>
+	<tr>
+		<td>
+			<div class="field" align="left">
+    		<%= f.label :first_name %><br>
+    		<span style="color:black;">
+    			<%= f.text_field :fname %>
+    		</span>
+  			</div>
+  		</td>
+  		<td>&nbsp;</td>
+		<td>
+		  <div class="field" align="left">
+		    <%= f.label :last_name %><br>
+		    <span style="color:black;">
+			    <%= f.text_field :lname %>
+		    </span>
+		  </div>			
+		</td>
+	</tr>
+</table>
+<br>
+	<table>
+		<tr>
+			<td>
+				<div class="field" align="left">
+				    <%= f.label :email %><br>
+					<span style="color:black;">
+						<%= f.text_field :email %>
+					</span>
+				</div>
+	  		</td>
+	  		<td>&nbsp;</td>
+			<td>
+			  <div class="field" align="left">
+			    <%= f.label :phone %><br>
+			    <span style="color:black;">
+			    	<%= f.text_field :phone %>
+				</span>		    		
+			  </div>			
+			</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<td>
+			  <div class="field" align="left">
+			    <%= f.label :company_or_project %><br>
+	    		<span style="color:black;">
+		    		<%= f.text_field :current_project %>
+		    	</span>
+			  </div>
+	  		</td>
+	  		<td>&nbsp;</td>
+			<td>
+				<div class="field" align="left">
+				    <%= f.label :your_location %><br>
+	    			<span style="color:black;">
+		    			<%= f.text_field :location %>
+		    		</span>
+				</div>		
+			</td>
+		</tr>
+	</table>
+<br>
+<table>
+	<tr>
+		<td>
+			<div class="field" align="left">
+	    		<%= f.label :your_areas_of_expertise %><br>
+				  	<span style="color:black;">
+				    	<%= f.text_area :topics_of_expertise, cols: "41", rows: "3" %>
+				    </span>
+  			</div>
+  		</td>
+  		<td>&nbsp;</td>
+		<td>
+		</td>
+	</tr>
+</table>
+
+  <div class="field" align="left">
+	<%= f.label :your_bio %><br>
+  	<span style="color:black;">
+    	<%= f.text_area :bio, cols: "41", rows: "6" %>
+    </span>
+  </div>
+<br>
+  <div class="actions" valign="bottom">
+    	<%= f.submit "Help Educate A Generation", :class => "btn btn-primary btn-xl" %>
+  </div>
+<% end %>

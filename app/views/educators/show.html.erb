@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @educator.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @educator.lname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @educator.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @educator.phone %>
+</p>
+
+<p>
+  <strong>School job function:</strong>
+  <%= @educator.school_job_function %>
+</p>
+
+<p>
+  <strong>School name:</strong>
+  <%= @educator.school_name %>
+</p>
+
+<p>
+  <strong>School location:</strong>
+  <%= @educator.school_location %>
+</p>
+
+<p>
+  <strong>Topics of interest:</strong>
+  <%= @educator.topics_of_interest %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @educator.message %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @educator.other %>
+</p>
+
+<%= link_to 'Edit', edit_educator_path(@educator) %> |
+<%= link_to 'Back', educators_path %>

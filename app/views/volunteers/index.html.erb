@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Volunteers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fname</th>
+      <th>Lname</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Current title</th>
+      <th>Current project</th>
+      <th>Bio</th>
+      <th>Topics of expertise</th>
+      <th>Location</th>
+      <th>Travel distance</th>
+      <th>Agreed to tos</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @volunteers.each do |volunteer| %>
+      <tr>
+        <td><%= volunteer.fname %></td>
+        <td><%= volunteer.lname %></td>
+        <td><%= volunteer.email %></td>
+        <td><%= volunteer.phone %></td>
+        <td><%= volunteer.current_title %></td>
+        <td><%= volunteer.current_project %></td>
+        <td><%= volunteer.bio %></td>
+        <td><%= volunteer.topics_of_expertise %></td>
+        <td><%= volunteer.location %></td>
+        <td><%= volunteer.travel_distance %></td>
+        <td><%= volunteer.agreed_to_tos %></td>
+        <td><%= link_to 'Show', volunteer %></td>
+        <td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
+        <td><%= link_to 'Destroy', volunteer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Volunteer', new_volunteer_path %>

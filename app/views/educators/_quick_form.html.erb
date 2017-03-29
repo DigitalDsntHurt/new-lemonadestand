@@ -1,0 +1,111 @@
+<%= form_for(educator) do |f| %>
+  <% if educator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(educator.errors.count, "error") %> prohibited this educator from being saved:</h2>
+
+      <ul>
+      <% educator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<table>
+	<tr>
+		<td>
+			<div class="field" align="left">
+    		<%= f.label :first_name %><br>
+    		<span style="color:black;">
+    			<%= f.text_field :fname %>
+    		</span>
+  			</div>
+  		</td>
+  		<td>&nbsp;</td>
+		<td>
+		  <div class="field" align="left">
+		    <%= f.label :last_name %><br>
+		    <span style="color:black;">
+			    <%= f.text_field :lname %>
+		    </span>
+		  </div>			
+		</td>
+	</tr>
+</table>
+<br>
+<table>
+	<tr>
+		<td>
+			<div class="field" align="left">
+			    <%= f.label :email %><br>
+				<span style="color:black;">
+					<%= f.text_field :email %>
+				</span>
+			</div>
+  		</td>
+  		<td>&nbsp;</td>
+		<td>
+		  <div class="field" align="left">
+		    <%= f.label :phone %><br>
+		    <span style="color:black;">
+		    	<%= f.text_field :phone %>
+			</span>		    		
+		  </div>			
+		</td>
+	</tr>
+</table>
+<br>
+<table>
+	<tr>
+		<td>
+			<div class="field" align="left">
+			    <%= f.label :school_name %><br>
+    			<span style="color:black;">
+	    			<%= f.text_field :school_name %>
+	    		</span>
+			</div>
+  		</td>
+  		<td>&nbsp;</td>
+		<td>
+		  <div class="field" align="left">
+		    <%= f.label :school_location %><br>
+    		<span style="color:black;">
+	    		<%= f.text_field :school_location %>
+	    	</span>
+		  </div>			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="field" align="left">
+			    <br>
+			    <%= f.label :your_role %><br>
+				<span style="color:black;"><%= f.select :school_job_function, options_for_select(["Teacher","Administrator","Parent", "Other"], :selected => "Teacher") %></span>
+			</div>
+  		</td>
+  		<td>&nbsp;</td>
+		<td>
+		<br>
+			<div class="field" align="left">
+		    	<%= f.label :topics_of_interest %><br>
+		    	<span style="color:black;"><%= f.select :topics_of_interest, options_for_select(["Entrepreneurship","Business Etiquette","Networking","Sales","Failure"], :selected => "Entrepreneurship") %></span>
+		  	</div>
+		</td>
+	</tr>
+</table>
+
+
+  
+
+  <div class="field" align="left">
+  	<br>
+	<%= f.label :message %><br>
+  	<span style="color:black;">
+    	<%= f.text_area :message, cols: "41", rows: "7" %>
+    </span>
+  </div>
+<br>
+  <div class="actions" valign="bottom">
+    	<%= f.submit "Register Your Classroom", :class => "btn btn-primary btn-xl" %>
+  </div>
+<% end %>

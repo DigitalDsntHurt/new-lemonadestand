@@ -1,0 +1,33 @@
+<section class="bg-img" id="getinvolved">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Getting Started</h2>
+                <p>Tell us a little about yourself to get started with The Lemonade Stand.</p>
+                <hr class="light">
+                
+
+                <table align="center">
+                    <tr>
+                        <td valign="top">
+                        	<h3>I'm an Educator</h3>
+                        	 <%= render :partial => '/educators/quick_form', :locals => {:educator => Educator.new} %>
+                        </td>
+                        <td width="10%"></td>
+                        <td valign="top">
+                        	<h3>I'm an Entrepreneurs</h3>
+                        	 <%= render :partial => '/volunteers/quick_form', :locals => {:volunteer => Volunteer.new} %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td width="15%"></td>
+                        <td></td>
+                    </tr>                    
+                </table>   
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+</section>
+
