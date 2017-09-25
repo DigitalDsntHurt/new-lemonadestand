@@ -4,11 +4,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">How You Can Help? </h2>
-                <p>Share your Story, your career, your passions, your loves. Mentor a student. Hire an intern. Take on an apprentice.</p>
                 <br>
-                
-                <br><h2 class="section-heading">Volunteer</h2>
-                <hr class="light">
             </div>
         </div>
     </div>
@@ -17,12 +13,14 @@
         <div class="row">
             <div id="for-educators" class="col-lg-6" align="center" style="vertical-align: top;"><br><br>
                 <h3>I'm an Educator / Parent / Student</h3>
+                <p>Please have someone contact me about having an entrepreneur talk at your school.</p>
                  <%= render :partial => '/educators/quick_form', :locals => {:educator => Educator.new} %>
             </div>
 <br><br>
-
+            
             <div id="for-entrepreneurs" class="col-lg-6"  align="center" style="vertical-align: top;">
                 <h3>I'm an Entrepreneur</h3>
+                <p>Share your Story, your career, your passions, your loves.<br>Mentor a student. Hire an intern. Take on an apprentice.</p>
                  <%= render :partial => '/volunteers/quick_form', :locals => {:volunteer => Volunteer.new} %>
                  
             </div>                        
