@@ -1,0 +1,23 @@
+<p>
+  Your Lemonade Stand is growing!. Here's your new entrepreneur volunteer:
+</p>
+
+<p>
+	<ul>
+		<li>
+			<%= @volunteer.fname %> <%= @volunteer.lname %> <br>
+			<%= @volunteer.current_title %> at <%= @volunteer.current_project %> in <%= @volunteer.location %>
+		</li>
+		<li>
+			Bio: <%= @volunteer.bio %>
+		</li>
+		<li>
+			Topics of expertise: <%= @volunteer.topics_of_expertise %>
+		</li>
+		<li>
+			<%= @volunteer.email %>
+		</li>
+		<li>
+			<%= @volunteer.phone %>
+		</li>
+</p>

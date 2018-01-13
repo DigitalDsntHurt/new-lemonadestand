@@ -28,6 +28,7 @@ class EducatorsController < ApplicationController
 
     respond_to do |format|
       if @educator.save
+        SignupAlertMailer.educator_notification(@educator).deliver
         format.html { redirect_to '/misc/educator_registration_conf', notice: 'Educator was successfully created.' }
         format.json { render '/misc/educator_registration_conf', status: :created, location: '/misc/educator_registration_conf' }
       else

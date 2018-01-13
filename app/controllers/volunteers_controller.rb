@@ -28,6 +28,7 @@ class VolunteersController < ApplicationController
 
     respond_to do |format|
       if @volunteer.save
+        SignupAlertMailer.volunteer_notification(@volunteer).deliver
         format.html { redirect_to '/misc/volunteer_registration_conf', notice: 'Volunteer was successfully created.' }
         format.json { render '/misc/volunteer_registration_conf', status: :created, location: '/misc/volunteer_registration_conf' }
       else
