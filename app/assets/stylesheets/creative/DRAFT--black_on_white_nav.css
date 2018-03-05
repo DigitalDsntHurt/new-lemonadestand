@@ -1,0 +1,88 @@
+/* New NavBar Styles */
+.navbar {
+    border-style:none;
+    background-color:white;
+    min-height:106px;
+}
+
+.new-nav {
+    
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    color: #000!important;
+}
+
+.collapse{
+    background-color: white!important;
+    background: white!important;
+}
+ul.nav {
+    background-color: white!important;
+    background: white!important;
+}
+.nav-outer-item{
+    background-color: white!important;
+    background: white!important;
+
+    .page-scroll {
+        background-color: white!important;
+        background: white!important;   
+        text-transform: uppercase;
+        font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+        font-weight: 600;
+        color: #000!important;    
+    }
+
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: white;
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: white;
+    }    
+}

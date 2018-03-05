@@ -420,7 +420,7 @@ body {
 /* New NavBar Styles */
 .navbar {
     border-style:none;
-    background-color:#f4e242;
+    background-color:white;
     min-height:106px;
 }
 
@@ -436,20 +436,20 @@ body {
 }
 
 .collapse{
-    background-color: #f4e242!important;
-    background: #f4e242!important;
+    background-color: white!important;
+    background: white!important;
 }
 ul.nav {
-    background-color: #f4e242!important;
-    background: #f4e242!important;
+    background-color: white!important;
+    background: white!important;
 }
 .nav-outer-item{
-    background-color: #f4e242!important;
-    background: #f4e242!important;
+    background-color: white!important;
+    background: white!important;
 
     .page-scroll {
-        background-color: #f4e242!important;
-        background: #f4e242!important;   
+        background-color: white!important;
+        background: white!important;   
         text-transform: uppercase;
         font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
         font-weight: 600;
@@ -458,7 +458,7 @@ ul.nav {
 
     /* Dropdown Button */
     .dropbtn {
-        background-color: #f4e242;
+        background-color: white;
         color: black;
         padding: 16px;
         font-size: 16px;
@@ -476,7 +476,7 @@ ul.nav {
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f4e242;
+        background-color: white;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -502,12 +502,6 @@ ul.nav {
 
     /* Change the background color of the dropdown button when the dropdown content is shown */
     .dropdown:hover .dropbtn {
-        background-color: #f4e242;
+        background-color: white;
     }    
 }
-
-
-    
-
-
-
